@@ -13,7 +13,7 @@ The tool reads the first few bytes of a file and compares them with a database o
 
 ## Usage
 Run the script using:
-python file_checker.py
+python spoof_detector.py
 
 ## Example
 Renaming a file like:
