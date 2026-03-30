@@ -12,5 +12,21 @@ A Python-based cybersecurity tool that detects file type spoofing by analyzing f
 The tool reads the first few bytes of a file and compares them with a database of known magic numbers to identify the true file type.
 
 ## Usage
-```bash
-python spoof_detector.py
+Run the script using:
+python file_checker.py
+
+## Example
+Renaming a file like:
+malware.exe → image.jpg
+
+The tool will detect:
+- Actual type: EXE
+- Extension: JPG
+- Result: Mismatch detected
+
+## Limitations
+- Some file types like .txt, .csv, and .html do not have fixed magic numbers and may appear as "unknown"
+- Detection is based on known signatures only
+
+## Author
+Danie Immanuel
